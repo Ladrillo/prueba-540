@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# Prueba 540 👋
 
 ## License
 
@@ -6,7 +6,15 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Requirements
+## Video Walkthrough
+
+[Video on YouTube](https://youtu.be/sHhFERPXLSQ)
+
+## Design Files
+
+[Design files on Figma](https://www.figma.com/design/O3OAwL9U95aJVhra4XOooH/Challenge-FrontEnd)
+
+## Requirements for Dev
 
 - Node
 - XCode
@@ -15,29 +23,25 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 ## Get started
 
-1. Install dependencies
+1. Install dependencies and start
 
    ```bash
    npm install
-   ```
-
-2. Start the app
-
-   ```bash
    npm run android
    npm run ios
    ```
 
-3. Run Tests
+2. Run Tests
 
    ```bash
    npm run test
    ```
 
-4. Bundle the app (Android)
+3. Bundle the app
 
    ```bash
    eas build --profile preview --platform android
+   eas build --profile preview --platform ios
    ```
 
 ## API
