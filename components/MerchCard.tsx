@@ -107,6 +107,15 @@ const styles = StyleSheet.create({
   },
 })
 
+const formatDateLong = date => {
+  return new Date(date)
+    .toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' })
+}
+const getMonthLong = date => {
+  return new Date(date)
+  .toLocaleDateString('es-ES', { month: 'long' })
+}
+
 export interface MerchCardProps {
   order: Order
   handlePress: () => void
@@ -125,8 +134,7 @@ const MerchantCard: FC<MerchCardProps> = ({ order, handlePress }) => {
             <View>
               <ThemedText style={styles.merchantName}>{order.merchantName}</ThemedText>
               <View style={styles.dateAndArticles}>
-                <ThemedText style={styles.date}>{new Date(order.nextDueDate)
-                  .toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' })}
+                <ThemedText style={styles.date}>{formatDateLong(order.nextDueDate)}
                 </ThemedText>
                 <ThemedText style={styles.articles}>
                   <FontAwesome name="shopping-bag" size={14} /> {order.numberOfArticles} artículos
@@ -144,8 +152,7 @@ const MerchantCard: FC<MerchCardProps> = ({ order, handlePress }) => {
           <View style={styles.paymentInfo}>
             <View style={styles.dateBox}>
               <Text style={styles.day}>{new Date(order.nextDueDate).getDate()}</Text>
-              <Text style={styles.month}>{new Date(order.nextDueDate)
-                .toLocaleDateString('es-ES', { month: 'long' })}</Text>
+              <Text style={styles.month}>{getMonthLong(order.nextDueDate)}</Text>
             </View>
             <View style={styles.amountInfo}>
               <ThemedText style={styles.amountLabel}>Cobro de:</ThemedText>
@@ -159,7 +166,7 @@ const MerchantCard: FC<MerchCardProps> = ({ order, handlePress }) => {
           <View style={styles.completedInfo}>
             {/* <FontAwesome name="check-circle" style={styles.checkmark} /> */}
             <ThemedText style={styles.completedText}>
-              Compra completada {new Date(order.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' })}
+              Compra completada {formatDateLong(order.date)}
             </ThemedText>
           </View>
         )}
