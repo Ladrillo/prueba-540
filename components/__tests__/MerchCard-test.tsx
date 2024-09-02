@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react-native'
-import MerchantCard from '../MerchCard'
+import MerchCard from '../MerchCard'
 
 const order1 = {
   id: '1',
@@ -16,10 +16,10 @@ const order1 = {
   shippedArticles: 2,
 }
 
-describe('<MerchantCard />', () => {
-  test('Text renders correctly on MerchantCard', () => {
+describe('<MerchCard />', () => {
+  test('Text renders correctly on MerchCard', () => {
     const screen = render(
-      <MerchantCard data={order1} handlePress={Function.prototype} />
+      <MerchCard order={order1} handlePress={Function.prototype} />
     )
     screen.getByText('100 €')
     expect(screen.toJSON()).toMatchSnapshot()

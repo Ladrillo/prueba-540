@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<MerchantCard /> Text renders correctly on MerchantCard 1`] = `
+exports[`<MerchCard /> Text renders correctly on MerchCard 1`] = `
 <View
   accessibilityState={
     {
@@ -68,7 +68,7 @@ exports[`<MerchantCard /> Text renders correctly on MerchantCard 1`] = `
       <Image
         source={
           {
-            "uri": "https://res.cloudinary.com/caskchain/image/upload/v1717158058/Sequra/amazon.png",
+            "uri": "https://res.cloudinary.com/etc.png",
           }
         }
         style={
@@ -197,7 +197,7 @@ exports[`<MerchantCard /> Text renders correctly on MerchantCard 1`] = `
           <Image
             source={
               {
-                "uri": "https://cdn.iconscout.com/icon/free/png-512/free-amazon-1543560-1306063.png",
+                "uri": "https://cdn.iconscout.com/etc.png",
               }
             }
             style={

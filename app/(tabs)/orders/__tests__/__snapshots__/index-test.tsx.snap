@@ -620,101 +620,36 @@ exports[`<OrdersScreen /> Text renders correctly on OrdersScreen 1`] = `
                 {
                   "alignItems": "center",
                   "flexDirection": "row",
-                  "justifyContent": "space-between",
-                  "padding": 15,
+                  "marginTop": 10,
                 }
               }
             >
-              <View
+              <Text
                 style={
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#e0f7fa",
-                    "borderRadius": 10,
-                    "height": 110,
-                    "justifyContent": "center",
-                    "paddingHorizontal": 15,
-                    "paddingVertical": 10,
-                    "width": 110,
-                  }
-                }
-              >
-                <Text
-                  style={
+                  [
                     {
-                      "fontSize": 24,
-                      "fontWeight": "bold",
-                    }
-                  }
-                >
-                  1
-                </Text>
-                <Text
-                  style={
+                      "color": "#11181C",
+                    },
                     {
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    },
+                    undefined,
+                    undefined,
+                    undefined,
+                    undefined,
+                    {
+                      "color": "#7e7e7e",
                       "fontSize": 14,
-                    }
-                  }
-                >
-                  noviembre
-                </Text>
-              </View>
-              <View
-                style={
-                  {
-                    "alignItems": "flex-end",
-                  }
+                      "marginBottom": 20,
+                      "marginLeft": 10,
+                    },
+                  ]
                 }
               >
-                <Text
-                  style={
-                    [
-                      {
-                        "color": "#11181C",
-                      },
-                      {
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      },
-                      undefined,
-                      undefined,
-                      undefined,
-                      undefined,
-                      {
-                        "color": "#7e7e7e",
-                        "fontSize": 14,
-                      },
-                    ]
-                  }
-                >
-                  Cobro de:
-                </Text>
-                <Text
-                  style={
-                    [
-                      {
-                        "color": "#11181C",
-                      },
-                      {
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      },
-                      undefined,
-                      undefined,
-                      undefined,
-                      undefined,
-                      {
-                        "color": "#000",
-                        "fontSize": 22,
-                        "fontWeight": "bold",
-                      },
-                    ]
-                  }
-                >
-                  200
-                   €
-                </Text>
-              </View>
+                Compra completada 
+                1 oct 2021
+              </Text>
             </View>
           </View>
         </View>
