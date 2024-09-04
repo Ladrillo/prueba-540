@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import { View, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import { ThemedText } from '@/components/ThemedText'
 import { FontAwesome } from '@expo/vector-icons'
@@ -96,7 +95,7 @@ export interface OrderDetails {
   orderId: string
 }
 
-const OrderDetails: FC<OrderDetails> = ({ orders = [], orderId, handleBackPress }) => {
+const OrderDetails = ({ orders = [], orderId, handleBackPress }: OrderDetails) => {
   const order = orders.find(ord => ord.id == orderId)
   if (!order) {
     return <View style={styles.container}><ThemedText>Oops</ThemedText></View>

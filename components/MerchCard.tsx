@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import { View, ImageBackground, Image, StyleSheet, TouchableOpacity, Text } from 'react-native'
 import { ThemedText } from '@/components/ThemedText'
 import { FontAwesome } from '@expo/vector-icons'
@@ -121,7 +120,7 @@ export interface MerchCardProps {
   handlePress: () => void
 }
 
-const MerchantCard: FC<MerchCardProps> = ({ order, handlePress }) => {
+const MerchantCard = ({ order, handlePress }: MerchCardProps) => {
   return (
     <TouchableOpacity onPress={handlePress}>
       <View style={styles.container}>

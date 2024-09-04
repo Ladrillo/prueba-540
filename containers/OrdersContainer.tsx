@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react'
+import React, { ReactElement } from 'react'
 import { StyleSheet, ActivityIndicator } from 'react-native'
 import { ThemedView } from '@/components/ThemedView'
 import { ThemedText } from '@/components/ThemedText'
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   },
 })
 
-const OrdersContainer: FC<OrdersContainerProps> = ({ children }) => {
+const OrdersContainer = ({ children }: OrdersContainerProps) => {
   const { loading, error, data } = useQuery(GET_ORDERS)
   if (loading) {
     return (

@@ -1,4 +1,3 @@
-import React from 'react'
 import { StyleSheet, SafeAreaView, ScrollView, Text } from 'react-native'
 import MerchantCard from '@/components/MerchCard'
 import { ThemedText } from '@/components/ThemedText'
@@ -22,7 +21,7 @@ const styles = StyleSheet.create({
   }
 })
 
-const OrdersList: React.FC<OrdersListProps> = ({ orders = [], goToOrderDetails }) => {
+const OrdersList = ({ orders = [], goToOrderDetails }: OrdersListProps) => {
   return (
     <SafeAreaView style={styles.container}>
       <ThemedText style={styles.title} type="title">Orders</ThemedText>
