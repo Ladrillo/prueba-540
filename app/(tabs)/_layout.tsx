@@ -5,6 +5,15 @@ import { Colors } from '@/constants/Colors'
 import { useColorScheme } from '@/hooks/useColorScheme'
 import { ORDERS_ENABLED } from '@/config/featureFlags'
 
+export const ICONS = {
+  HOME: 'home',
+  HOME_OUTLINE: 'home-outline',
+  BAG: 'bag',
+  BAG_OUTLINE: 'bag-outline',
+  EYE: 'eye',
+  EYE_OUTLINE: 'eye-outline'
+}
+
 export default function TabLayout() {
   const colorScheme = useColorScheme()
   return (
@@ -18,7 +27,7 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <TabBarIcon name={focused ? ICONS.HOME : ICONS.HOME_OUTLINE} color={color} />
           ),
         }}
       />
@@ -31,7 +40,7 @@ export default function TabLayout() {
             return <TouchableOpacity {...props} />
           },
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'bag' : 'bag-outline'} color={color} />
+            <TabBarIcon name={focused ? ICONS.BAG : ICONS.BAG_OUTLINE} color={color} />
           ),
         }}
       />
@@ -44,7 +53,7 @@ export default function TabLayout() {
             return <TouchableOpacity {...props} disabled={true} />
           },
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'eye' : 'eye-outline'} color={color} />
+            <TabBarIcon name={focused ? ICONS.EYE : ICONS.EYE_OUTLINE} color={color} />
           ),
         }}
       />
